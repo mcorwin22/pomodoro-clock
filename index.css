@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+
+body {
+  background-color: #ccc;
+  color: #425166;
+  font-family: "Share Tech Mono", Monospace;
+}
+
+div {
+  cursor: default;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.title {
+  grid-column: 1 / -1;
+  font-size: 5em;
+  margin-bottom: 20px;
+}
+
+.study-label {
+  grid-column: 5 / 6;
+  font-size: 2em;
+  justify-self: end;
+}
+
+.study-up,
+.study-down {
+  grid-column: 6 / 7;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.study-time {
+  grid-column: 6 / 7;
+  font-size: 3em;
+}
+
+.break-label {
+  grid-column: 7 / 8;
+  font-size: 2em;
+  justify-self: end;
+}
+
+.break-up,
+.break-down {
+  grid-column: 8 / 9;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.break-time {
+  grid-column: 8 / 9;
+  font-size: 3em;
+}
+
+.clock {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  background-color: #5193ea;
+  color: #ccc;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid #333;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.study-break {
+  grid-column: 1 / -1;
+  font-size: 4em;
+  text-align: center;
+  align-self: end;
+}
+
+.time {
+  grid-column: 1 / -1;
+  font-size: 5em;
+  text-align: center;
+  align-self: middle;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+.start,
+.reset {
+  font-size: 3em;
+  text-align: center;
+  cursor: pointer;
+  align-self: start;
+}
+
+.start {
+  grid-column: 1 / 2;
+  justify-self: end;
+  margin-right: 20px;
+}
+
+.reset {
+  grid-column: 2 / 3;
+  justify-self: start;
+  margin-left: 20px;
+}
